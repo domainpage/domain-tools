@@ -1,15 +1,9 @@
+const options = require('./config');
 const fetch = require("node-fetch");
 
 const domains = [
     // add domains
 ];
-
-const options = {
-    domainPageUsername: "",
-    goDaddyApiKey: "",
-    goDaddyApiSecret: "",
-    goDaddyCustomerNumber: ""
-}
 
 const bulkDomainForwardingUpdate = ({ domainPageUsername, goDaddyCustomerNumber, goDaddyApiKey, goDaddyApiSecret }) => {
     return domains.forEach(async domain => {
