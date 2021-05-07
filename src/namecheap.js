@@ -63,11 +63,28 @@ const domains = [
     "policyfresh.com",
     "popup.domains",
     "product.vc",
-    "puffed.io"
+    "puffed.io",
+    "regularly.io",
+    "roomful.io",
+    "sampled.io",
+    "scooped.io",
+    "searchtrends.io",
+    "shogun.to",
+    "softwareremote.com",
+    "softwaretools.io",
+    "speller.io",
+    "stackdirectory.com",
+    "standardnft.com",
+    "strtup.io",
+    "surveykeep.com",
+    "transcribed.io",
+    "trendcomparison.com",
+    "unscheduled.io",
+    "utilized.io",
+    "vergeclick.com"
 ]
 
 const namecheapForwarding = ({ domainPageUsername, namecheapUsername, namecheapApiKey}) => {
-    console.log('namecheap:', namecheapApiKey)
     return domains.forEach(async domain => {
         const splitDomain = domain.split(".")
         const sld = splitDomain[0]
@@ -125,5 +142,5 @@ const namecheapForwarding = ({ domainPageUsername, namecheapUsername, namecheapA
         }
     })
 }
-console.info(options)
+
 namecheapForwarding(options);

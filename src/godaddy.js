@@ -2,7 +2,7 @@ const options = require('./config');
 const fetch = require("node-fetch");
 
 const domains = [
-    // add domains
+    // add godaddy domains
 ];
 
 const bulkDomainForwardingUpdate = ({ domainPageUsername, goDaddyCustomerNumber, goDaddyApiKey, goDaddyApiSecret }) => {
