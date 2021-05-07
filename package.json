@@ -1,0 +1,23 @@
+{
+  "name": "domain-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/godaddy.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domainpage/domain-tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domainpage/domain-tools/issues"
+  },
+  "homepage": "https://github.com/domainpage/domain-tools#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
