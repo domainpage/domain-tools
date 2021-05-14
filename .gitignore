@@ -1,5 +1,9 @@
-config.js
+.env
 
 node_modules
-.idea
 
+# editor configurations
+.idea/
+.vscode/
+.atom/
+.nova/

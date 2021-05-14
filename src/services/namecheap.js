@@ -1,11 +1,9 @@
-const options = require('./config');
+const { options, getDomains } = require('../config');
 const fetch = require("node-fetch")
 const xml = require("xml")
 const parseXml = require("xml2js").parseString
 
-const domains = [
-    // add namecheap domains
-]
+const domains = getDomains()
 
 const namecheapForwarding = ({ domainPageUsername, namecheapUsername, namecheapApiKey}) => {
     return domains.forEach(async domain => {
