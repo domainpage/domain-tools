@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "godaddy": "node src/godaddy.js",
-    "namecheap": "node src/namecheap.js",
+    "godaddy": "node src/services/godaddy.js",
+    "namecheap": "node src/services/namecheap.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/domainpage/domain-tools#readme",
   "dependencies": {
+    "dotenv": "^9.0.2",
     "node-fetch": "^2.6.1",
     "xml": "^1.0.1",
     "xml2js": "^0.4.23"
