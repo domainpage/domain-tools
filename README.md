@@ -1,3 +1,4 @@
+![DomainPage.io Logo](./static/domainpage-logo.svg)
 # DomainPage.io
 > Open-Source Domain Tools
 

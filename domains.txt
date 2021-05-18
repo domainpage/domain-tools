@@ -1,2 +1,7 @@
-example.com
-test.com
+domain.legal
+maineth.com
+ethconnection.com
+opensourceblock.com
+ethapplications.com
+developeth.com
+blockatomic.com
