@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/domainpage/domain-tools#readme",
   "dependencies": {
+    "batch-request-js": "^2.0.2",
     "dotenv": "^9.0.2",
     "node-fetch": "^2.6.1",
     "xml": "^1.0.1",

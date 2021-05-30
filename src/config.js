@@ -2,6 +2,8 @@ require('dotenv').config()
 const fs = require('fs');
 const path = require('path');
 
+const DOMAIN_LIST_FILENAME = 'domains.txt';
+
 exports.options = {
     domainPageUsername: process.env.DOMAINPAGE_USERNAME,
     goDaddyApiKey: process.env.GODADDY_API_KEY,
@@ -12,10 +14,10 @@ exports.options = {
 }
 
 exports.getDomains = () => {
-    const contents = fs.readFileSync(path.join(process.cwd(), 'domains.txt'), {
+    const contents = fs.readFileSync(path.join(process.cwd(), DOMAIN_LIST_FILENAME), {
         encoding: 'utf-8',
         flag: 'r'
     })
     const list = contents.split('\n')
-    return list.length ? list : []
+    return list.length ? list.filter(Boolean).sort() : []
 }
